@@ -36,7 +36,7 @@ type = "search"
 type = "archives"
 
 [widgets.homepage.params]
-limit = 5
+limit = 6
 
 [[widgets.homepage]]
 type = "categories"
