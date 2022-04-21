@@ -18,7 +18,7 @@ subtitle = "/home/s00lfly"
 [sidebar.avatar]
 enabled = true
 local = true
-src = "avatar.jpg"
+src = "img/avatar.jpg"
 
 [article]
 math = false
