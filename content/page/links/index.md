@@ -1,5 +1,5 @@
 ---
-title: Links
+title: Liens
 links:
   - title: GitHub
     description: Mon GitHub
@@ -8,7 +8,7 @@ links:
   - title: CV
     description: Mon CV en Markdown
     website: https://rguyennot.github.io/resume/
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+    image: https://github.githubassets.com/images/icons/emoji/unicode/1f4c4.png
 menu:
     main: 
         weight: 4
@@ -18,4 +18,4 @@ menu:
 comments: false
 ---
 
-Cette page contient quelques liens vers différents projets perso :  
+Cette page contient quelques liens vers différents projets perso 🙂
