@@ -1,7 +1,6 @@
 ---
 title: "Recherche"
-url: "/search"
-slug: "search"
+url: "search"
 layout: "search"
 outputs:
     - html
