@@ -1,6 +1,5 @@
 ---
 title: "Recherche"
-url: "search"
 layout: "search"
 outputs:
     - html
