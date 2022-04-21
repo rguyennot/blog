@@ -17,3 +17,5 @@ menu:
 
 comments: false
 ---
+
+Cette page contient quelques liens vers différents projets perso :  
