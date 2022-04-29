@@ -54,7 +54,7 @@ jobs:
             #       single-commit: true
 
             - name: Install AWS CLI v2
-                run: |
+              run: |
                 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
                 cd /tmp
                 unzip awscliv2.zip
@@ -62,18 +62,18 @@ jobs:
                 cd -
 
             - name: Install awscli_plugin_endpoint
-                run: pip3 install awscli_plugin_endpoint && pip3 show awscli_plugin_endpoint
+              run: pip3 install awscli_plugin_endpoint && pip3 show awscli_plugin_endpoint
 
             - name: copy ScaleWay AWS CLI configuration
-                run: |
+              run: |
                 mkdir ~/.aws
                 cp ./aws/config ~/.aws/config
 
             - name: Compile items
-                run: hugo -D
+              run: hugo -D
 
             - name: Push to Scaleway storage
-                env:
-                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-                run: /usr/local/bin/aws s3 sync --delete ./public/ s3://blog-demo.petreguyennot.fr/
+              env:
+              AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+              AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+              run: /usr/local/bin/aws s3 sync --delete ./public/ s3://blog-demo.petreguyennot.fr/
