@@ -64,7 +64,7 @@ jobs:
             - name: Install awscli_plugin_endpoint
               run: pip3 install awscli_plugin_endpoint && pip3 show awscli_plugin_endpoint
 
-            - name: copy ScaleWay AWS CLI configuration
+            - name: copy Scaleway AWS CLI configuration
               run: |
                 mkdir ~/.aws
                 cp ./aws/config ~/.aws/config
