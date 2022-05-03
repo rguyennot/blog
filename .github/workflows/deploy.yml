@@ -76,4 +76,4 @@ jobs:
               env:
                 AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
                 AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-              run: /usr/local/bin/aws s3 sync --delete ./public/ s3://blog-demo.petreguyennot.fr/
+              run: /usr/local/bin/aws s3 sync --delete ./public/ s3://blog.petreguyennot.fr/
